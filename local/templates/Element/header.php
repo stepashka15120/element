@@ -17,6 +17,7 @@
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH. "/element/css/contacts.min.css");
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH. "/element/css/galery.min.css");
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH. "/element/css/spisok.min.css");
+    Asset::getInstance()->addCss(SITE_TEMPLATE_PATH. "/element/css/card.min.css");
 
 
     ?>
