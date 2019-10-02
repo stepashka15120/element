@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Список товаров | Element</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/maginfic-popup.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/spisok.min.css">
+</head>
+<body>
+<header class="header">
+    <div class="contact">
+        <div class="container row align-items-center">
+            <a class="contact__address col-xs col-sm-6" href="contacts.html">г. Москва, ул. Горького, д. 123</a>
+            <div class="contact__items col-xs col-sm-6 col-md-5 col-lg-4 clo-xl-3 d-flex justify-content-between ">
+                <a href="tel:+74959999999">+7 495 999 99 99</a>
+                <a href="mailto:mail@sitename.ru">mail@sitename.ru</a>
+            </div>
+        </div>
+    </div>
+    <div class="header__main">
+        <div class="container row">
+            <a class="header__logo" href="index.html" aria-label="Ссылка на домашнюю страницу">
+                <img src="img/header/logo.png" alt="Логотип компании Элемент">
+                <span>Элемент</span>
+            </a>
+            <div class="header__navigation">
+                <nav class="navbar navbar-expand-lg navbar-light bg-transparent pr-0">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="menu-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link" href="catalog.html">Каталог<span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link" href="about.html">О нас</a>
+                            <a class="nav-item nav-link" href="galery.html">Галерея</a>
+                            <a class="nav-item nav-link" href="#">Новости</a>
+                            <a class="nav-item nav-link" href="contacts.html">Контакты</a>
+                        </div>
+                    </div>
+                </nav>
+                <form class="form-inline">
+                    <div class="form__search">
+                        <label class="search__label" for="form-search">Найти</label>
+                        <input class="form-control mr-lg-2" id="form-search" type="search" placeholder="Поиск по сайту..." aria-label="Search">
+                    </div>
+                    <button class="btn btn-outline-secondary my-2 my-sm-1" type="submit"></button>
+                </form>
+                <a class="btn list-icon" href="spisok.html"></a>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="main">
+
+    <section class="hero hero--spisok">
+        <div class="container">
+            <nav aria-label="breadcrumb bg-transparent">
+                <ol class="breadcrumb bg-transparent">
+                    <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Список товаров</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <section class="spisok">
+        <div class="container">
+            <h1 class="spisok__title">Список товаров</h1>
+            <p class="spisok__empty">Здесь пока нет товаров...</p>
+            <p class="spisok__titles">
+                <span>Наименование</span>
+                <span>Объём</span>
+                <span class="more">Количество</span>
+                <span class="more">Цена</span>
+            </p>
+            <ul class="spisok__items">
+                <li class="spisok__item clearfix">
+                    <img src="img/page-spisok/item-1.jpg" alt="Фотография товара" class="item__image">
+                    <div class="item__info">
+                        <div class="item__name">
+                            <h2>Название товара в каталоге в несколько строк</h2>
+                            <span class="item__artikl">AXL-12345</span>
+                        </div>
+                        <span class="item__value">2,5 л</span>
+                        <div class="item__nums">
+                            <button class="nums__minus">Меньше</button>
+                            <label class="nums__label" for="card-numbers">Количество
+                                <input class="nums__input" name="card-numbers" type="number" value="1" id="card-numbers" min="1" max="10">
+                            </label>
+                            <button class="nums__plus">Больше</button>
+                        </div>
+                        <span class="item__price">3 360 руб.</span>
+                        <button class="item__close">Закрыть</button>
+                    </div>
+                </li>
+                <li class="spisok__item clearfix">
+                    <img src="img/page-spisok/item-1.jpg" alt="Фотография товара" class="item__image">
+                    <div class="item__info">
+                        <div class="item__name">
+                            <h2>Название товара в каталоге в несколько строк</h2>
+                            <span class="item__artikl">AXL-12345</span>
+                        </div>
+                        <span class="item__value">2,5 л</span>
+                        <div class="item__nums">
+                            <button class="nums__minus">Меньше</button>
+                            <label class="nums__label" for="card-numbers">Количество
+                                <input class="nums__input" name="card-numbers" type="number" value="1" id="card-numbers" min="1" max="10">
+                            </label>
+                            <button class="nums__plus">Больше</button>
+                        </div>
+                        <span class="item__price">3 360 руб.</span>
+                        <button class="item__close">Закрыть</button>
+                    </div>
+                </li>
+                <li class="spisok__item clearfix">
+                    <img src="img/page-spisok/item-1.jpg" alt="Фотография товара" class="item__image">
+                    <div class="item__info">
+                        <div class="item__name">
+                            <h2>Название товара в каталоге в несколько строк</h2>
+                            <span class="item__artikl">AXL-12345</span>
+                        </div>
+                        <span class="item__value">2,5 л</span>
+                        <div class="item__nums">
+                            <button class="nums__minus">Меньше</button>
+                            <label class="nums__label" for="card-numbers">Количество
+                                <input class="nums__input" name="card-numbers" type="number" value="1" id="card-numbers" min="1" max="10">
+                            </label>
+                            <button class="nums__plus">Больше</button>
+                        </div>
+                        <span class="item__price">3 360 руб.</span>
+                        <button class="item__close">Закрыть</button>
+                    </div>
+                </li>
+            </ul>
+            <p class="spisok__total">
+                Итого:
+                <span class="spisok__total-number">10 080 руб.</span>
+            </p>
+            <div class="spisok__buttons">
+                <button class="button spisok__button magnific-callback" data-mfp-src=".callback-popup">Заказать звонок</button>
+                <button class="button button--black spisok__button">Сохранить список (PDF)</button>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <section class="questions">
+            <h2 class="questions__title">
+                <b>Есть вопросы?</b>
+                Мы вам перезвоним!</h2>
+            <form action="post" class="questions__form">
+                <input class="questions__input form__item" type="text" name="questions-name" id="questions-name">
+                <label class="questions__label" for="questions-name">Как к вам обращаться?</label>
+                <input class="questions__input form__item" type="tel" name="questions-phone" id="questions-phone">
+                <label class="questions__label questions__label--phone" for="questions-phone">Ваш номер телефона</label>
+                <button class="button button--dark form__item magnific-questions" type="submit" data-mfp-src=".questions-popup">Отправить</button>
+            </form>
+        </section>
+        <section class="footer__navigation">
+            <a href="index.html" aria-label="Ссылка на домашнюю страницу">
+                <img class="footer__logo" src="img/footer/logo-white.png" alt="Логотип компании" class="footer__logo">
+            </a>
+            <ul class="footer__nav d-flex flex-wrap justify-content-around">
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="galery.html">Галерея</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <span class="footer__copy">Lorem ipsum</span>
+        </section>
+    </div>
+</footer>
+
+<div class="popup callback-popup mfp-hide">
+    <form action="post" class="popup__form">
+        <h2 class="popup__title">Заказать звонок</h2>
+        <input class="popup__input" type="text" name="callback-name" id="callback-name" required>
+        <label class="popup__label" for="callback-name">Как к вам обращаться?</label>
+        <input class="popup__input" type="tel" name="callback-phone" id="callback-phone" required>
+        <label class="popup__label popup__label--phone" for="callback-phone">Ваш номер телефона</label>
+        <button class="button-link popup__submit" type="submit">Отправить</button>
+    </form>
+</div>
+
+<div class="popup questions-popup mfp-hide">
+    <h2 class="popup__title">Готово!</h2>
+    <p>Совсем скоро наш менеджер свяжется с вами и ответит на все ваши вопросы.</p>
+</div>
+
+<script src="js/jquery-3.4.1.slim.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
+
+<!--
+Макет и картинки предоставлю, но возможно какую-то мелочуху придется вырезать из макета.
+
+Обязательно:
+Верстка адаптивная (xs, sm, md, lg, xl), валидная.
+Использовать препроцессор Sass (SCSS).
+Использовать сетку Bootstrap 4.
+
+Желательно:
+Mobile First
+Нейминг по БЭМ,
+использовать Gulp,
+для модалок использовать MagnifiqPopup
+для слайдера использовать slick slider
+HTML препроцессор Pug
+
+PerfectPixel не требуется.
+IE до 11 в расчет не берем.
+Проверять валидность будем на 3w валидаторе + google page speed insights (нужно в зеленой зоне).
+-->
+<!--
+.icon-right-open:before { content: '\e800'; }
+.icon-search:before { content: '\e801'; }
+.icon-cancel:before { content: '\e802'; }
+.icon-location:before { content: '\e803'; }
+.icon-menu:before { content: '\f0c9'; }
+.icon-list-bullet:before { content: '\f0ca'; }
+.icon-copyright:before { content: '\f1f9'; }  -->
